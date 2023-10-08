@@ -1,0 +1,89 @@
+{
+	"id": "33fe01d2-5ad4-48a1-b2f1-0e3466a1acb9",
+	"name": "New Collection",
+	"timestamp": "2023-10-08T14:35:45.042Z",
+	"collection_id": "29784891-fc3fd166-5e16-4e4d-93ad-dbfd4549c323",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-10-08T14:34:52.271Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "98944315-0302-422a-bbb7-e3bddda4db21",
+			"name": "PostiveAndNegative",
+			"url": "https://reqres.in/api/users?delay=$%23\n",
+			"time": 478,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 9,
+					"fail": 1
+				}
+			},
+			"times": [
+				451,
+				472,
+				457,
+				465,
+				10463,
+				2447,
+				5440,
+				30475,
+				487,
+				478
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": false
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 10,
+	"totalTime": 51635,
+	"collection": {
+		"requests": [
+			{
+				"id": "98944315-0302-422a-bbb7-e3bddda4db21",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "fc3fd166-5e16-4e4d-93ad-dbfd4549c323",
+		"name": "CaseStudy3_Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29784891"
+	},
+	"item": [
+		{
+			"name": "CaseStudy3_IntermediatePostman",
+			"item": [
+				{
+					"name": "PostiveAndNegative",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const positiveCombinationData = pm.iterationData.get(\"delayId\");\r",
+									"pm.variables.set(\"delayId\", positiveCombinationData);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users?delay={{delayId}}\n",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "delay",
+									"value": "{{delayId}}\n"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
